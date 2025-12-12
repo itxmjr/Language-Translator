@@ -106,7 +106,7 @@ Contributions are welcome! If you have suggestions for improvements or new featu
 
 This application is deployed on Hugging Face Spaces.
 
-Space: https://huggingface.co/spaces/aibymjr/CodeAlpha_Language_Translator
+Space: https://huggingface.co/spaces/itxmjr/CodeAlpha_Language_Translator
 
 ## 📜 License
 
