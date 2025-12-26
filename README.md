@@ -1,29 +1,27 @@
----
-title: CodeAlpha Language Translator
+title: Language Translator
 emoji: 🌐
 colorFrom: red
 colorTo: red
-sdk: streamlit
-sdk_version: 1.51.0
-app_file: main.py
+sdk: docker
+app_port: 7860
 pinned: false
 license: mit
 ---
 
-# 🌐 CodeAlpha Language Translator
+# 🌐 Language Translator
 
 ![Python](https://img.shields.io/badge/Python-3.13+-blue.svg?style=for-the-badge&logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.51+-FF4B4B.svg?style=for-the-badge&logo=Streamlit&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
 
-A powerful, real-time language translation application built with Python and Streamlit. This app allows you to instantly translate text between over 20 global languages and features integrated Text-to-Speech (TTS) capabilities to listen to your translations.
+A powerful, real-time language translation application built with Python and Next.js. This app allows you to instantly translate text between over 20 global languages and features integrated Text-to-Speech (TTS) capabilities to listen to your translations.
 
 ## ✨ Features
 
 - **Multi-Language Support**: Translate seamlessly between 20+ languages including English, Spanish, French, German, Chinese, Arabic, and more.
 - **Real-Time Translation**: Powered by the Google Translate API for accurate and fast results.
 - **Text-to-Speech (TTS)**: Listen to the translated text with a single click using Google Text-to-Speech integration.
-- **User-Friendly Interface**: Clean and responsive UI built with Streamlit for an optimal user experience.
+- **User-Friendly Interface**: Clean and responsive UI built with Next.js for an optimal user experience.
 - **Cross-Platform**: Runs in your browser, making it accessible on any device.
 
 ## 🚀 Demo
@@ -33,41 +31,42 @@ A powerful, real-time language translation application built with Python and Str
 ## 🛠️ Tech Stack
 
 - **[Python](https://www.python.org/)**: Core programming language.
-- **[Streamlit](https://streamlit.io/)**: Framework for building the web interface.
+- **[FastAPI](https://fastapi.tiangolo.com/)**: Framework for building the backend API.
+- **[Next.js](https://nextjs.org/)**: Framework for building the web interface.
 - **[gTTS (Google Text-to-Speech)](https://pypi.org/project/gTTS/)**: Library for converting text to speech.
 - **[Requests](https://pypi.org/project/requests/)**: For making API calls to Google Translate.
 
 ## 📦 Installation
 
-Ensure you have Python 3.13 or higher installed.
+Ensure you have Python 3.13 or higher and Node.js installed.
 
 1.  **Clone the Repository**
     ```bash
-    git clone https://github.com/yourusername/CodeAlpha_Language_Translator.git
-    cd CodeAlpha_Language_Translator
+    git clone https://github.com/yourusername/Language-Translator.git
+    cd Language-Translator
     ```
 
-2.  **Install Dependencies**
-    It is recommended to use a virtual environment (like `venv` or `uv`).
-
-    Using `pip`:
+2.  **Backend Setup**
+    Navigate to the `backend` directory:
     ```bash
-    pip install -r requirements.txt
-    ```
-
-
-    Using `uv` (if applicable):
-    ```bash
+    cd backend
     uv sync
+    uv run uvicorn src.api:app --reload
+    ```
+
+3.  **Frontend Setup**
+    Navigate to the `frontend` directory:
+    ```bash
+    cd frontend
+    npm install
+    npm run dev
     ```
 
 ## 🎮 Usage
 
 1.  **Run the Application**
-    Execute the following command in your terminal:
-    ```bash
-    streamlit run main.py
-    ```
+    Ensure both backend and frontend servers are running.
+    Access the application at `http://localhost:3000`.
 
 2.  **Translate Text**
     - Select your **Source Language** from the left dropdown.
@@ -81,14 +80,19 @@ Ensure you have Python 3.13 or higher installed.
 ## 📂 Project Structure
 
 ```
-CodeAlpha_Language_Translator/
-├── main.py              # Entry point of the application
-├── pyproject.toml       # Project configuration and dependencies
-├── requirements.txt     # Python dependencies
+Language-Translator/
+├── backend/             # Python FastAPI Backend
+│   ├── src/
+│   │   ├── api.py       # API endpoints
+│   │   └── translator.py # Translation logic
+│   ├── pyproject.toml   # Python dependencies
+│   └── ...
+├── frontend/            # Next.js Frontend
+│   ├── src/             # Frontend source code
+│   ├── package.json     # Node dependencies
+│   └── ...
+├── Dockerfile           # Deployment configuration
 ├── README.md            # Project documentation
-├── src/
-│   ├── app.py           # Main Streamlit application logic
-│   └── translator.py    # Translation and TTS utility functions
 └── ...
 ```
 
@@ -106,7 +110,7 @@ Contributions are welcome! If you have suggestions for improvements or new featu
 
 This application is deployed on Hugging Face Spaces.
 
-Space: https://huggingface.co/spaces/itxmjr/CodeAlpha_Language_Translator
+Space: https://huggingface.co/spaces/itxmjr/Language-Translator
 
 ## 📜 License
 
@@ -115,5 +119,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by M Jawad ur Rehman using Streamlit and Python.</sub>
+  <sub>Built with ❤️ by M Jawad ur Rehman using Next.js and Python.</sub>
 </div>
