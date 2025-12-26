@@ -1,3 +1,4 @@
+---
 title: Language Translator
 emoji: 🌐
 colorFrom: red
