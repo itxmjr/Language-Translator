@@ -48,7 +48,7 @@ Ensure you have Python 3.13 or higher and Node.js installed.
 
 1.  **Clone the Repository**
     ```bash
-    git clone https://github.com/yourusername/Language-Translator.git
+    git clone https://github.com/itxmjr/Language-Translator.git
     cd Language-Translator
     ```
 
