@@ -12,18 +12,21 @@ license: mit
 # 🌐 Language Translator
 
 ![Python](https://img.shields.io/badge/Python-3.13+-blue.svg?style=for-the-badge&logo=python&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.51+-FF4B4B.svg?style=for-the-badge&logo=Streamlit&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-16+-black.svg?style=for-the-badge&logo=next.js&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.127+-009688.svg?style=for-the-badge&logo=fastapi&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0+-06B6D4.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
 
-A powerful, real-time language translation application built with Python and Next.js. This app allows you to instantly translate text between over 20 global languages and features integrated Text-to-Speech (TTS) capabilities to listen to your translations.
+A powerful, real-time language translation application built with **Python (FastAPI)** and **Next.js**. This app allows you to instantly translate text between over 30 global languages and features integrated Text-to-Speech (TTS) capabilities to listen to your translations in a modern, responsive interface.
 
 ## ✨ Features
 
-- **Multi-Language Support**: Translate seamlessly between 20+ languages including English, Spanish, French, German, Chinese, Arabic, and more.
+- **Multi-Language Support**: Translate seamlessly between 30+ languages including English, Spanish, French, German, Chinese, Arabic, and more.
 - **Real-Time Translation**: Powered by the Google Translate API for accurate and fast results.
-- **Text-to-Speech (TTS)**: Listen to the translated text with a single click using Google Text-to-Speech integration.
-- **User-Friendly Interface**: Clean and responsive UI built with Next.js for an optimal user experience.
-- **Cross-Platform**: Runs in your browser, making it accessible on any device.
+- **Text-to-Speech (TTS)**: Listen to the translated text with a single click using Google Text-to-Speech (gTTS) integration.
+- **Premium UI/UX**: Clean, responsive, and modern interface built with **Next.js**, **Tailwind CSS 4**, and **Radix UI** components.
+- **Fast & Lightweight**: Backend powered by **FastAPI** for high performance and minimal latency.
+- **Cross-Platform**: Fully responsive design that works perfectly on desktops, tablets, and smartphones.
 
 ## 🚀 Demo
 
@@ -32,8 +35,10 @@ A powerful, real-time language translation application built with Python and Nex
 ## 🛠️ Tech Stack
 
 - **[Python](https://www.python.org/)**: Core programming language.
-- **[FastAPI](https://fastapi.tiangolo.com/)**: Framework for building the backend API.
-- **[Next.js](https://nextjs.org/)**: Framework for building the web interface.
+- **[FastAPI](https://fastapi.tiangolo.com/)**: Modern, high-performance web framework for the backend.
+- **[Next.js](https://nextjs.org/)**: React framework for building the modern web interface.
+- **[Tailwind CSS 4](https://tailwindcss.com/)**: Utility-first CSS framework for premium styling.
+- **[Radix UI](https://www.radix-ui.com/)**: Low-level UI component library for accessible and high-quality components.
 - **[gTTS (Google Text-to-Speech)](https://pypi.org/project/gTTS/)**: Library for converting text to speech.
 - **[Requests](https://pypi.org/project/requests/)**: For making API calls to Google Translate.
 
